@@ -1,0 +1,2 @@
+ProductA 12.99
+ProductB 15.99
