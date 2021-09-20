@@ -1,4 +1,4 @@
-public class ProductA implements Product{
+public class ProductA implements Product {
     private final double price;
 
     ProductA(double price) {
