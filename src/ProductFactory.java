@@ -21,12 +21,18 @@ public class ProductFactory implements AbstractProductFactory {
 
     @Override
     public ProductA createProductA() {
-        return new ProductA(priceTable.get("ProductA"));
+        // Instantiate the new product and then set its price
+        ProductA newProduct = new ProductA();
+        newProduct.setPrice(priceTable.get("ProductA"));
+        return newProduct;
     }
 
     @Override
     public ProductB createProductB() {
-        return new ProductB(priceTable.get("ProductB"));
+        // Instantiate the new product and then set its price
+        ProductB newProduct = new ProductB();
+        newProduct.setPrice(priceTable.get("ProductB"));
+        return newProduct;
     }
 
 }

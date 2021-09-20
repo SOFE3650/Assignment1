@@ -1,12 +1,14 @@
 public class ProductB implements Product {
-    private final double price;
-
-    ProductB(double price) {
-        this.price = price;
-    }
+    private double price;
 
     @Override
     public double getPrice() {
         return this.price;
     }
+
+    @Override
+    public void setPrice(double newPrice) {
+        this.price = newPrice;
+    }
+
 }
